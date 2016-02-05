@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     get 'greeter/goodbye' 
     get '/courses/index/:looking_for' => 'courses#index'
     root 'courses#index'
+    get '/:looking_for' => 'courses#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
