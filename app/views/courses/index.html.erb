@@ -2,6 +2,14 @@
     Searching for - <%= @search_term %>
  
 </h1>
+<% if @courses.nil? %>
+
+
+<h1>No Course found</h1>
+
+
+<% else %>
+
 
 <table border="1">
 <thead>
@@ -28,11 +36,5 @@
     
     
     </tbody>
-
-
-
-
-
-
-
 </table>
+<% end %>
